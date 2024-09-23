@@ -17,9 +17,6 @@
   font-size: var(--type-body-s-size);
   font-weight: 700;
   height: 27px;
-}
-
-.light .timer-label {
   color: #000;
 }
 
@@ -52,9 +49,6 @@
   font-size: var(--type-body-m-size);
   font-weight: 700;
   text-align: center;
-}
-
-.light .timer-box {
   background-color: #222;
   color: #FFF;
 }
@@ -75,9 +69,6 @@
   font-size: var(--type-body-xs-size);
   font-weight: 400;
   text-align: start;
-}
-
-.light .timer-unit-label {
   color: #464646;
 }
 
