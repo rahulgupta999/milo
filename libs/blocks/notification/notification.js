@@ -14,7 +14,7 @@
 * Notification - v1.2
 */
 
-import { decorateBlockText, decorateBlockBg, decorateTextOverrides, decorateMultiViewport } from '../../utils/decorate.js';
+import { decorateBlockText, decorateBlockBg, decorateTextOverrides, decorateMultiViewport, loadCDT } from '../../utils/decorate.js';
 import { createTag, getConfig, loadStyle } from '../../utils/utils.js';
 
 const { miloLibs, codeRoot } = getConfig();
@@ -173,5 +173,9 @@ export default async function init(el) {
   if (el.matches(`:is(.${ribbon}, .${pill})`)) {
     wrapCopy(blockText);
     decorateMultiViewport(el);
+  }
+
+  if (el.classList.contains('countdown-timer')) {
+    await loadCDT(el, el.classList);
   }
 }

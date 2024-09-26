@@ -90,9 +90,12 @@ function isMobile() {
 
 export default async function initCDT(el, classList) {
   const placeholders = ['cdt-ends-in', 'cdt-days', 'cdt-hours', 'cdt-mins'];
-  const [cdtLabel, cdtDays, cdtHours, cdtMins] = await Promise.all(
+  let [cdtLabel, cdtDays, cdtHours, cdtMins] = await Promise.all(
     placeholders.map((placeholder) => replaceKey(placeholder, getConfig())),
   );
+  cdtHours = 'HOURS';
+  cdtMins = 'MINS';
+  cdtDays = 'DAYS';
 
   const cdtMetadata = getMetadata('countdown-timer');
   if (cdtMetadata === null) {
