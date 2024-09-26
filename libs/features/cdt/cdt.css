@@ -14,10 +14,14 @@
 }
 
 .timer-label {
-  font-size: var(--type-body-s-size);
+  font-size: 16px;
   font-weight: 700;
   height: 27px;
   color: #000;
+}
+
+.timer-separator {
+  margin: 0px 2px;
 }
 
 .dark .timer-label {
@@ -30,6 +34,7 @@
 
 .timer-block {
   display: flex;
+  margin-inline-start: 10px;
 }
 
 .horizontal .timer-block {
@@ -46,7 +51,7 @@
   padding: 0 9px;
   width: 10px;
   border-radius: 5px;
-  font-size: var(--type-body-m-size);
+  font-size: 18px;
   font-weight: 700;
   text-align: center;
   background-color: #222;
@@ -66,7 +71,7 @@
 
 .timer-unit-label {
   width: 100%;
-  font-size: var(--type-body-xs-size);
+  font-size: 14px;
   font-weight: 400;
   text-align: start;
   color: #464646;
