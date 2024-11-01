@@ -49,6 +49,7 @@
 
 .timer-box {
   padding: 0 calc(var(--font-size-multiplier, 1) * 9px);
+  box-sizing: content-box;
   width: var(--type-detail-s-size);
   border-radius: 5px;
   font-size: var(--type-body-m-size);
